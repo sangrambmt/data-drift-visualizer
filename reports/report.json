@@ -1,0 +1,73 @@
+{
+  "overall_score": 0.695,
+  "overall_label": "MEDIUM",
+  "recommendation": "Monitor closely",
+  "columns": {
+    "age": {
+      "type": "numerical",
+      "score": 1.0,
+      "label": "HIGH",
+      "psi": 3.608,
+      "ks_p": 0.0,
+      "explanation": [
+        "distribution shifted (PSI high)",
+        "statistically different (KS test)"
+      ]
+    },
+    "income": {
+      "type": "numerical",
+      "score": 1.0,
+      "label": "HIGH",
+      "psi": 5.487,
+      "ks_p": 0.0,
+      "explanation": [
+        "distribution shifted (PSI high)",
+        "statistically different (KS test)"
+      ]
+    },
+    "country": {
+      "type": "categorical",
+      "score": 1.0,
+      "label": "HIGH",
+      "chi_p": 0.0,
+      "explanation": [
+        "category distribution changed"
+      ]
+    },
+    "device": {
+      "type": "categorical",
+      "score": 0.0,
+      "label": "LOW",
+      "chi_p": 1.0,
+      "explanation": []
+    },
+    "tenure": {
+      "type": "numerical",
+      "score": 0.864,
+      "label": "HIGH",
+      "psi": 0.633,
+      "ks_p": 0.272,
+      "explanation": [
+        "distribution shifted (PSI high)"
+      ]
+    },
+    "transactions": {
+      "type": "numerical",
+      "score": 1.0,
+      "label": "HIGH",
+      "psi": 1.895,
+      "ks_p": 0.0,
+      "explanation": [
+        "distribution shifted (PSI high)",
+        "statistically different (KS test)"
+      ]
+    },
+    "segment": {
+      "type": "categorical",
+      "score": 0.0,
+      "label": "LOW",
+      "chi_p": 1.0,
+      "explanation": []
+    }
+  }
+}

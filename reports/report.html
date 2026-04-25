@@ -1,0 +1,104 @@
+
+<html>
+<head>
+<style>
+body { font-family: Arial; background:#f5f5f5; padding:20px; }
+.card { background:white; padding:20px; border-radius:10px; margin-bottom:20px; }
+.low { color:green; font-weight:bold; }
+.medium { color:orange; font-weight:bold; }
+.high { color:red; font-weight:bold; }
+table { width:100%; border-collapse: collapse; }
+td, th { padding:10px; border-bottom:1px solid #ddd; }
+img { border-radius:6px; }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+<h2>Overall Drift: <span class="medium">
+MEDIUM (0.695)
+</span></h2>
+
+<p><b>Recommendation:</b> Monitor closely</p>
+</div>
+
+<div class="card">
+<table>
+<tr>
+<th>Column</th>
+<th>Type</th>
+<th>Score</th>
+<th>Risk</th>
+<th>Explanation</th>
+<th>Chart</th>
+</tr>
+
+        <tr>
+            <td>age</td>
+            <td>numerical</td>
+            <td>1.0</td>
+            <td class="high">HIGH</td>
+            <td>distribution shifted (PSI high), statistically different (KS test)</td>
+            <td><img src="images/age.png" width="300"></td>
+        </tr>
+        
+        <tr>
+            <td>income</td>
+            <td>numerical</td>
+            <td>1.0</td>
+            <td class="high">HIGH</td>
+            <td>distribution shifted (PSI high), statistically different (KS test)</td>
+            <td><img src="images/income.png" width="300"></td>
+        </tr>
+        
+        <tr>
+            <td>country</td>
+            <td>categorical</td>
+            <td>1.0</td>
+            <td class="high">HIGH</td>
+            <td>category distribution changed</td>
+            <td><img src="images/country.png" width="300"></td>
+        </tr>
+        
+        <tr>
+            <td>transactions</td>
+            <td>numerical</td>
+            <td>1.0</td>
+            <td class="high">HIGH</td>
+            <td>distribution shifted (PSI high), statistically different (KS test)</td>
+            <td><img src="images/transactions.png" width="300"></td>
+        </tr>
+        
+        <tr>
+            <td>tenure</td>
+            <td>numerical</td>
+            <td>0.864</td>
+            <td class="high">HIGH</td>
+            <td>distribution shifted (PSI high)</td>
+            <td><img src="images/tenure.png" width="300"></td>
+        </tr>
+        
+        <tr>
+            <td>device</td>
+            <td>categorical</td>
+            <td>0.0</td>
+            <td class="low">LOW</td>
+            <td>No issue</td>
+            <td><img src="images/device.png" width="300"></td>
+        </tr>
+        
+        <tr>
+            <td>segment</td>
+            <td>categorical</td>
+            <td>0.0</td>
+            <td class="low">LOW</td>
+            <td>No issue</td>
+            <td><img src="images/segment.png" width="300"></td>
+        </tr>
+        
+</table>
+</div>
+
+</body>
+</html>
